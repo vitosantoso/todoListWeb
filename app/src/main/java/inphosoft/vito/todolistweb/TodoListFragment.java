@@ -16,6 +16,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 public class TodoListFragment extends Fragment {
@@ -82,6 +85,8 @@ public class TodoListFragment extends Fragment {
         private Todo mTodo;
         private TextView mTitleTextView;
         private TextView mDateTextView;
+        private Date dateBuffer;
+        private SimpleDateFormat mSimpleDateFormat = new SimpleDateFormat("EEE, d MMM yyyy");
 
         public TaskHolder(LayoutInflater inflater, ViewGroup parent){
             super(inflater.inflate(R.layout.list_item_task, parent, false));
@@ -93,7 +98,8 @@ public class TodoListFragment extends Fragment {
         public void bind(Todo todo){
             mTodo = todo;
             mTitleTextView.setText(mTodo.getTask());
-            mDateTextView.setText(mTodo.getDate().toString());
+            dateBuffer = mTodo.getDate();
+            mDateTextView.setText(mSimpleDateFormat.format(dateBuffer).toString());
         }
 
         @Override
