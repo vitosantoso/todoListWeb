@@ -8,7 +8,7 @@
     <string name="task_title_hint">Enter a title for the task.</string>
     <string name="task_title_label">Title</string>
     <string name="task_details_label">Details</string>
-    <string name="task_solved_label">Solved</string>
+    <string name="task_solved_label">Finished</string>
     <string name="date_picker_title">Due Date : </string>
     <string name="new_task">New Task</string>
 </resources>
