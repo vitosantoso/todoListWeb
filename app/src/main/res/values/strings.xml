@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">To Do List</string>
+    <string name="task_title">What to be done?</string>
+    <string name="placeholder_insert_task">Insert task here</string>
+    <string name="date_title">Due date</string>
+    <string name="placeholder_insert_date">Insert date here</string>
+    <string name="confirm_button">Add New Task</string>
+    <string name="task_title_hint">Enter a title for the task.</string>
+    <string name="task_title_label">Title</string>
+    <string name="task_details_label">Details</string>
+    <string name="task_solved_label">Solved</string>
+    <string name="date_picker_title">Due Date : </string>
+    <string name="new_task">New Task</string>
+</resources>
